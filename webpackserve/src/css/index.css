@@ -1,0 +1,6 @@
+/*相对于自己位置的引用*/
+@import "font.css";
+@import "div.less";
+body{
+    background: #e1e5f0;
+}
