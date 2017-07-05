@@ -15,3 +15,7 @@ define('aaa',function(){
 
 $('#wel').html(
     '欢迎————————'+require('aaa')+json.name);
+
+window.onbeforeunload = function(){
+    return confirm('您确定要离开本网页');
+};

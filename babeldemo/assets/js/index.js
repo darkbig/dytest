@@ -60,7 +60,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "97c49de4705e645238c7"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "5c89beed8c13726f1229"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -753,6 +753,10 @@ var $ = __webpack_require__(8);
 }.call(__WEBPACK_LOCAL_MODULE_0__module.exports, __webpack_require__, __WEBPACK_LOCAL_MODULE_0__module.exports, __WEBPACK_LOCAL_MODULE_0__module), __WEBPACK_LOCAL_MODULE_0__module.loaded = true, __WEBPACK_LOCAL_MODULE_0__ === undefined && (__WEBPACK_LOCAL_MODULE_0__ = __WEBPACK_LOCAL_MODULE_0__module.exports));
 
 $('#wel').html('欢迎————————' + __WEBPACK_LOCAL_MODULE_0__ + _test2.default.name);
+
+window.onbeforeunload = function () {
+    return confirm('您确定要离开本网页');
+};
 
 /***/ }),
 /* 2 */
